@@ -1,0 +1,50 @@
+name: Ultron Telemetry Sync
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "scripts/**"
+      - ".github/workflows/ultron-sync.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ultron-telemetry
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    name: Rebuild telemetry cards
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Render Ultron telemetry
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_LOGIN: ${{ github.repository_owner }}
+        run: node scripts/generate-assets.mjs
+
+      - name: Commit refreshed SVGs
+        run: |
+          if [[ -n "$(git status --porcelain -- assets)" ]]; then
+            git config user.name "ultron-core[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets
+            git commit -m "chore: refresh ultron telemetry"
+            git push
+          else
+            echo "Telemetry is already current. No commit required."
+          fi

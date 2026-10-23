@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="t d">
+  <title id="t">Ultron language stack — neural loadout</title>
+  <desc id="d">Language composition for mohdziauddin2006-cloud, led by JavaScript at 76.0 percent.</desc>
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D131B"/>
+      <stop offset=".52" stop-color="#080C11"/>
+      <stop offset="1" stop-color="#04060A"/>
+    </linearGradient>
+    <radialGradient id="cardHalo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C00606" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#780202" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#4A0000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="numGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F5F8"/>
+      <stop offset=".55" stop-color="#C4CDD7"/>
+      <stop offset="1" stop-color="#737F8D"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5E0202"/>
+      <stop offset=".45" stop-color="#C40707"/>
+      <stop offset="1" stop-color="#FF2A1A"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#520101"/>
+      <stop offset=".35" stop-color="#9D0606"/>
+      <stop offset=".78" stop-color="#E40A0A"/>
+      <stop offset="1" stop-color="#FF5A4A"/>
+    </linearGradient>
+    <linearGradient id="barGradHot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A0202"/>
+      <stop offset=".35" stop-color="#C40707"/>
+      <stop offset=".76" stop-color="#FF1E12"/>
+      <stop offset="1" stop-color="#FF9A8E"/>
+    </linearGradient>
+    <linearGradient id="dividerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38424E" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#46515E"/>
+      <stop offset="1" stop-color="#38424E" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="redRail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E10600" stop-opacity="0"/>
+      <stop offset=".28" stop-color="#E10600" stop-opacity=".8"/>
+      <stop offset=".72" stop-color="#E10600" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#E10600" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2A1A" stop-opacity="0"/>
+      <stop offset=".7" stop-color="#FF2A1A" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#FF8A7E" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="gridSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2A1A" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FF2A1A" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#FF2A1A" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1A222C" stroke-width=".55" opacity=".5"/>
+      <circle cx="0" cy="0" r=".7" fill="#2B3541" opacity=".45"/>
+    </pattern>
+    <pattern id="barcode" width="32" height="12" patternUnits="userSpaceOnUse">
+      <rect width="32" height="12" fill="none"/>
+      <rect x="0" width="2" height="12" fill="#6A7583"/>
+      <rect x="5" width="1" height="12" fill="#6A7583"/>
+      <rect x="8" width="3" height="12" fill="#6A7583"/>
+      <rect x="14" width="1" height="12" fill="#6A7583"/>
+      <rect x="18" width="2" height="12" fill="#6A7583"/>
+      <rect x="23" width="1" height="12" fill="#6A7583"/>
+      <rect x="27" width="3" height="12" fill="#6A7583"/>
+    </pattern>
+    <filter id="redGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cardGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85 .06" numOctaves="2" seed="9" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+    </filter>
+    <clipPath id="cardClip"><path d="M1 1H1152L1199 48V429H1Z"/></clipPath>
+  </defs>
+  <style>
+  .reveal { animation: rise .9s cubic-bezier(.16,.8,.24,1) both; }
+  .bar { transform-box: fill-box; transform-origin: center bottom; animation: barGrow 1.25s cubic-bezier(.2,.8,.25,1) both; }
+  .fillbar { transform-box: fill-box; transform-origin: left center; animation: fillGrow 1.5s cubic-bezier(.16,.8,.24,1) both; }
+  .week { animation: cellIn .5s ease both; }
+  .pulse { animation: pulse 3.6s ease-in-out infinite; }
+  .hot { filter: drop-shadow(0 0 3px rgba(255,42,26,.55)); }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes barGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  @keyframes fillGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes cellIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pulse { 0%,100% { opacity: .4; } 45% { opacity: 1; } 55% { opacity: .8; } }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .bar, .fillbar, .week, .pulse { animation: none !important; }
+  }
+</style>
+
+  <rect width="1200" height="430" fill="#04060A"/>
+  <g clip-path="url(#cardClip)">
+    <path d="M1 1H1152L1199 48V429H1Z" fill="url(#cardBg)"/>
+    <rect width="1200" height="430" fill="url(#gridPattern)" opacity=".55"/>
+    <ellipse cx="1060" cy="26" rx="380" ry="240" fill="url(#cardHalo)"/>
+    <g fill="none" stroke="#1D2631" opacity=".55">
+      <path d="M1 92H90M1110 92H1199"/>
+      <path d="M32 384H120M1080 384H1168"/>
+      <circle cx="1150" cy="376" r="24" stroke-dasharray="1 6"/>
+      <path d="M1150 342V352"/>
+    </g>
+    <rect width="1200" height="430" filter="url(#cardGrain)" opacity=".035"/>
+
+    <!-- header -->
+    <g>
+      <rect x="32" y="27" width="7" height="7" fill="#E10600" class="pulse"/>
+      <text x="50" y="38" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" letter-spacing="3.2" fill="#D7DEE8">NEURAL LOADOUT</text>
+      <text x="32" y="55" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#5E6A79">LANGUAGE STACK / BYTE MASS / SOURCE COMPOSITION</text>
+      <text x="1128" y="33" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.6" fill="#6E7A88">2026.10.23 / 10:43 UTC</text>
+      <text x="1128" y="51" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.8" fill="#7C8795">LIVE // ROGUE CORE 03 / 06</text>
+      <path d="M1 66H1199" stroke="#232C37"/>
+      <path d="M806 66H1128" stroke="url(#redRail)" stroke-width="2"/>
+    </g>
+
+    
+    <g class="reveal">
+      <text x="32" y="88" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#5E6A79">SOURCE COMPOSITION BY BYTES / PUBLIC REPOSITORIES ONLY</text>
+      <text x="1168" y="88" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.6" fill="#A50A0A">PRIMARY / JAVASCRIPT</text>
+    </g>
+    <path d="M480 150V340" stroke="#151C24" stroke-dasharray="1 7"/><path d="M660 150V340" stroke="#151C24" stroke-dasharray="1 7"/><path d="M840 150V340" stroke="#151C24" stroke-dasharray="1 7"/>
+    
+        <g class="reveal" style="animation-delay:0.08s">
+          <text x="32" y="112" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#FF3B2F">01</text>
+          <text x="66" y="112" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">JAVASCRIPT</text>
+          <text x="280" y="112" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">891.3 KB</text>
+          <rect x="300" y="104" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
+          <g class="fillbar" style="animation-delay:0.20s">
+            <rect x="300" y="104" width="547.2" height="10" fill="url(#barGradHot)"/>
+            <rect x="300" y="104" width="547.2" height="1.2" fill="#FF9A8E" opacity=".85"/>
+          </g>
+          <path d="M847.2 102V116" stroke="#FF6A5E" stroke-width="1.2"/>
+          <text x="1168" y="112" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">76.0<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M32 133H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
+        </g>
+      
+        <g class="reveal" style="animation-delay:0.15s">
+          <text x="32" y="155" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#8D0A0A">02</text>
+          <text x="66" y="155" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">HTML</text>
+          <text x="280" y="155" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">109.7 KB</text>
+          <rect x="300" y="147" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
+          <g class="fillbar" style="animation-delay:0.32s">
+            <rect x="300" y="147" width="67.4" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="147" width="67.4" height="1.2" fill="#FF9A8E" opacity=".4"/>
+          </g>
+          <path d="M367.4 145V159" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="155" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">9.4<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M32 176H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
+        </g>
+      
+        <g class="reveal" style="animation-delay:0.22s">
+          <text x="32" y="198" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#8D0A0A">03</text>
+          <text x="66" y="198" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">KOTLIN</text>
+          <text x="280" y="198" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">75.7 KB</text>
+          <rect x="300" y="190" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
+          <g class="fillbar" style="animation-delay:0.44s">
+            <rect x="300" y="190" width="46.5" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="190" width="46.5" height="1.2" fill="#FF9A8E" opacity=".4"/>
+          </g>
+          <path d="M346.5 188V202" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="198" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">6.5<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M32 219H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
+        </g>
+      
+        <g class="reveal" style="animation-delay:0.29s">
+          <text x="32" y="241" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#8D0A0A">04</text>
+          <text x="66" y="241" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">PYTHON</text>
+          <text x="280" y="241" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">54.0 KB</text>
+          <rect x="300" y="233" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
+          <g class="fillbar" style="animation-delay:0.56s">
+            <rect x="300" y="233" width="33.2" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="233" width="33.2" height="1.2" fill="#FF9A8E" opacity=".4"/>
+          </g>
+          <path d="M333.2 231V245" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="241" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">4.6<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M32 262H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
+        </g>
+      
+        <g class="reveal" style="animation-delay:0.36s">
+          <text x="32" y="284" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#8D0A0A">05</text>
+          <text x="66" y="284" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">CSS</text>
+          <text x="280" y="284" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">41.6 KB</text>
+          <rect x="300" y="276" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
+          <g class="fillbar" style="animation-delay:0.68s">
+            <rect x="300" y="276" width="25.5" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="276" width="25.5" height="1.2" fill="#FF9A8E" opacity=".4"/>
+          </g>
+          <path d="M325.5 274V288" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="284" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">3.5<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M32 305H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
+        </g>
+      
+        <g class="reveal" style="animation-delay:0.43s">
+          <text x="32" y="327" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#8D0A0A">06</text>
+          <text x="66" y="327" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">STANDARD ML</text>
+          <text x="280" y="327" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">225 B</text>
+          <rect x="300" y="319" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
+          <g class="fillbar" style="animation-delay:0.80s">
+            <rect x="300" y="319" width="5.0" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="319" width="5.0" height="1.2" fill="#FF9A8E" opacity=".4"/>
+          </g>
+          <path d="M305.0 317V331" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="327" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">&lt;0.1<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M32 348H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
+        </g>
+      
+    <g class="reveal" style="animation-delay:.8s">
+      <path d="M1 370H1199" stroke="#232C37"/>
+      <text x="32" y="398" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#677381">SOURCE MASS <tspan fill="#D7DEE8">1.15 MB</tspan></text>
+      <text x="432" y="398" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#677381">DETECTED <tspan fill="#D7DEE8">07</tspan> LANGUAGES</text>
+      <text x="1168" y="398" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#5E6A79">LOADOUT INDEX 03 / 06</text>
+    </g>
+  
+
+    <!-- footer -->
+    <g>
+      <text x="32" y="418" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="8" letter-spacing="2.2" fill="#46515E">ULTRON // ROGUE CORE</text>
+      <rect x="1124" y="406" width="66" height="11" fill="url(#barcode)" opacity=".55"/>
+      <text x="1106" y="418" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="8" letter-spacing="1.6" fill="#46515E">UC-03 / LOADOUT</text>
+    </g>
+  </g>
+
+  <path d="M1 1H1152L1199 48V429H1Z" fill="none" stroke="#29333F"/>
+  <g stroke="#E10600" fill="none" stroke-width="2">
+    <path d="M1 34V1H34"/>
+    <path d="M1199 396V429H1165"/>
+  </g>
+  <path d="M1152 1H1172L1199 28V48" fill="none" stroke="#4A5563" opacity=".8"/>
+  <path d="M1180 29L1199 48" stroke="#E10600" stroke-width="1.4" opacity=".65"/>
+  <g fill="#4A5563" opacity=".7">
+    <rect x="1148" y="60" width="2" height="6"/>
+    <rect x="1153" y="60" width="1" height="6"/>
+    <rect x="1157" y="60" width="3" height="6"/>
+    <rect x="1163" y="60" width="1" height="6"/>
+  </g>
+</svg>

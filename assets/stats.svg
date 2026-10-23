@@ -1,0 +1,270 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380" role="img" aria-labelledby="t d">
+  <title id="t">Ultron system telemetry — animated GitHub stats</title>
+  <desc id="d">Live public GitHub stats for mohdziauddin2006-cloud: 142 contributions, 136 commits, 5 repositories, 1 stars and 2 followers.</desc>
+  <defs>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0D131B"/>
+      <stop offset=".52" stop-color="#080C11"/>
+      <stop offset="1" stop-color="#04060A"/>
+    </linearGradient>
+    <radialGradient id="cardHalo" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#C00606" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#780202" stop-opacity=".08"/>
+      <stop offset="1" stop-color="#4A0000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="numGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2F5F8"/>
+      <stop offset=".55" stop-color="#C4CDD7"/>
+      <stop offset="1" stop-color="#737F8D"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5E0202"/>
+      <stop offset=".45" stop-color="#C40707"/>
+      <stop offset="1" stop-color="#FF2A1A"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#520101"/>
+      <stop offset=".35" stop-color="#9D0606"/>
+      <stop offset=".78" stop-color="#E40A0A"/>
+      <stop offset="1" stop-color="#FF5A4A"/>
+    </linearGradient>
+    <linearGradient id="barGradHot" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7A0202"/>
+      <stop offset=".35" stop-color="#C40707"/>
+      <stop offset=".76" stop-color="#FF1E12"/>
+      <stop offset="1" stop-color="#FF9A8E"/>
+    </linearGradient>
+    <linearGradient id="dividerGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38424E" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#46515E"/>
+      <stop offset="1" stop-color="#38424E" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="redRail" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E10600" stop-opacity="0"/>
+      <stop offset=".28" stop-color="#E10600" stop-opacity=".8"/>
+      <stop offset=".72" stop-color="#E10600" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#E10600" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2A1A" stop-opacity="0"/>
+      <stop offset=".7" stop-color="#FF2A1A" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#FF8A7E" stop-opacity=".16"/>
+    </linearGradient>
+    <linearGradient id="gridSweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FF2A1A" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#FF2A1A" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#FF2A1A" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#1A222C" stroke-width=".55" opacity=".5"/>
+      <circle cx="0" cy="0" r=".7" fill="#2B3541" opacity=".45"/>
+    </pattern>
+    <pattern id="barcode" width="32" height="12" patternUnits="userSpaceOnUse">
+      <rect width="32" height="12" fill="none"/>
+      <rect x="0" width="2" height="12" fill="#6A7583"/>
+      <rect x="5" width="1" height="12" fill="#6A7583"/>
+      <rect x="8" width="3" height="12" fill="#6A7583"/>
+      <rect x="14" width="1" height="12" fill="#6A7583"/>
+      <rect x="18" width="2" height="12" fill="#6A7583"/>
+      <rect x="23" width="1" height="12" fill="#6A7583"/>
+      <rect x="27" width="3" height="12" fill="#6A7583"/>
+    </pattern>
+    <filter id="redGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cardGrain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85 .06" numOctaves="2" seed="9" result="n"/>
+      <feColorMatrix in="n" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer>
+    </filter>
+    <clipPath id="cardClip"><path d="M1 1H1152L1199 48V379H1Z"/></clipPath>
+  </defs>
+  <style>
+  .reveal { animation: rise .9s cubic-bezier(.16,.8,.24,1) both; }
+  .bar { transform-box: fill-box; transform-origin: center bottom; animation: barGrow 1.25s cubic-bezier(.2,.8,.25,1) both; }
+  .fillbar { transform-box: fill-box; transform-origin: left center; animation: fillGrow 1.5s cubic-bezier(.16,.8,.24,1) both; }
+  .week { animation: cellIn .5s ease both; }
+  .pulse { animation: pulse 3.6s ease-in-out infinite; }
+  .hot { filter: drop-shadow(0 0 3px rgba(255,42,26,.55)); }
+  @keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes barGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  @keyframes fillGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes cellIn { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes pulse { 0%,100% { opacity: .4; } 45% { opacity: 1; } 55% { opacity: .8; } }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .bar, .fillbar, .week, .pulse { animation: none !important; }
+  }
+</style>
+
+  <rect width="1200" height="380" fill="#04060A"/>
+  <g clip-path="url(#cardClip)">
+    <path d="M1 1H1152L1199 48V379H1Z" fill="url(#cardBg)"/>
+    <rect width="1200" height="380" fill="url(#gridPattern)" opacity=".55"/>
+    <ellipse cx="1060" cy="26" rx="380" ry="240" fill="url(#cardHalo)"/>
+    <g fill="none" stroke="#1D2631" opacity=".55">
+      <path d="M1 92H90M1110 92H1199"/>
+      <path d="M32 334H120M1080 334H1168"/>
+      <circle cx="1150" cy="326" r="24" stroke-dasharray="1 6"/>
+      <path d="M1150 292V302"/>
+    </g>
+    <rect width="1200" height="380" filter="url(#cardGrain)" opacity=".035"/>
+
+    <!-- header -->
+    <g>
+      <rect x="32" y="27" width="7" height="7" fill="#E10600" class="pulse"/>
+      <text x="50" y="38" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" letter-spacing="3.2" fill="#D7DEE8">SYSTEM TELEMETRY</text>
+      <text x="32" y="55" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#5E6A79">PUBLIC SIGNAL / CONTRIBUTION DENSITY / IDENTITY VECTOR</text>
+      <text x="1128" y="33" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.6" fill="#6E7A88">2026.10.23 / 10:43 UTC</text>
+      <text x="1128" y="51" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.8" fill="#7C8795">LIVE // ROGUE CORE 02 / 06</text>
+      <path d="M1 66H1199" stroke="#232C37"/>
+      <path d="M806 66H1128" stroke="url(#redRail)" stroke-width="2"/>
+    </g>
+
+    
+    <g class="reveal">
+      <text x="32" y="105" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10.5" letter-spacing="2.6" fill="#798593">CONTRIBUTIONS / 365D</text>
+      <text x="28" y="196" font-family="Arial Black, Impact, sans-serif" font-size="94" font-weight="900" letter-spacing="-2" fill="url(#numGrad)">142</text>
+      <text x="33" y="220" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#5E6A79">TOTAL RECORDED IMPACT</text>
+      <text x="322" y="220" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.6" fill="#A50A0A">AVG 0.39 / DAY</text>
+      <rect x="32" y="234" width="290" height="3" fill="#181F28"/>
+      <rect x="32" y="234" width="112.8" height="3" fill="url(#redGrad)"/>
+      <circle cx="144.8" cy="235.5" r="2.2" fill="#FF5A4A"/>
+    </g>
+
+    <path d="M360 92V254" stroke="url(#dividerGrad)"/>
+
+    <g class="reveal" style="animation-delay:.12s">
+      <text x="394" y="107" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2.2" fill="#677381">COMMITS</text>
+      <text x="394" y="144" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="700" fill="#D7DEE8">136</text>
+      <rect x="386" y="115" width="2" height="32" fill="#9B0808"/>
+      <text x="394" y="205" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2.2" fill="#677381">STARS EARNED</text>
+      <text x="394" y="242" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="700" fill="#D7DEE8">1</text>
+      <rect x="386" y="213" width="2" height="32" fill="#5E0202"/>
+    </g>
+
+    <g class="reveal" style="animation-delay:.2s">
+      <text x="592" y="107" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2.2" fill="#677381">REPOSITORIES</text>
+      <text x="592" y="144" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="700" fill="#D7DEE8">5</text>
+      <rect x="584" y="115" width="2" height="32" fill="#5E0202"/>
+      <text x="592" y="205" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="2.2" fill="#677381">FOLLOWERS</text>
+      <text x="592" y="242" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="34" font-weight="700" fill="#D7DEE8">2</text>
+      <rect x="584" y="213" width="2" height="32" fill="#9B0808"/>
+    </g>
+
+    <path d="M790 92V254" stroke="url(#dividerGrad)"/>
+
+    <g class="reveal" style="animation-delay:.28s">
+      <text x="812" y="106" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#677381">ACTIVITY VECTOR / 14D</text>
+      <text x="1168" y="106" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.4" fill="#8F0A0A">PEAK 7</text>
+      <path d="M812 156H1152M812 228H1152" stroke="#1A222C"/>
+      <path d="M812 192H1152" stroke="#151C24" stroke-dasharray="2 7"/>
+      
+        <rect x="812" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.25s" x="812" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="836" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.29s" x="836" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="860" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.33s" x="860" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="884" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.37s" x="884" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="908" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.41s" x="908" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="932" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.45s" x="932" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="956" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.49s" x="956" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="980" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.53s" x="980" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="1004" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.57s" x="1004" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="1028" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.61s" x="1028" y="156" width="20" height="72" fill="url(#barGrad)"/>
+        <rect x="1028" y="156" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
+      
+        <rect x="1052" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.65s" x="1052" y="218" width="20" height="10" fill="url(#barGrad)"/>
+        <rect x="1052" y="218" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
+      
+        <rect x="1076" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.69s" x="1076" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="1100" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.73s" x="1100" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+        <rect x="1124" y="156" width="20" height="72" fill="#10161D"/>
+        <rect class="bar" style="animation-delay:0.77s" x="1124" y="225" width="20" height="3" fill="#1A222C"/>
+        
+      
+      <text x="812" y="254" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.4" fill="#46515E">14 CYCLES AGO</text>
+      <text x="1152" y="254" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.4" fill="#46515E">TODAY</text>
+    </g>
+
+    <path d="M1 272H1199" stroke="#232C37"/>
+    <g class="reveal" style="animation-delay:.36s">
+      <g font-family="Consolas, SFMono-Regular, Menlo, monospace">
+        <rect x="32" y="292" width="4" height="4" fill="#9B0808"/>
+        <text x="44" y="297" font-size="10" letter-spacing="1.8" fill="#677381">ACTIVE DAYS</text>
+        <text x="32" y="320" font-size="20" fill="#D7DEE8">10</text>
+
+        <rect x="210" y="292" width="4" height="4" fill="#9B0808"/>
+        <text x="222" y="297" font-size="10" letter-spacing="1.8" fill="#677381">CURRENT STREAK</text>
+        <text x="210" y="320" font-size="20" fill="#D7DEE8">00 <tspan font-size="10" fill="#6A7684">D</tspan></text>
+
+        <rect x="388" y="292" width="4" height="4" fill="#9B0808"/>
+        <text x="400" y="297" font-size="10" letter-spacing="1.8" fill="#677381">LONGEST STREAK</text>
+        <text x="388" y="320" font-size="20" fill="#D7DEE8">06 <tspan font-size="10" fill="#6A7684">D</tspan></text>
+
+        <rect x="566" y="292" width="4" height="4" fill="#9B0808"/>
+        <text x="578" y="297" font-size="10" letter-spacing="1.8" fill="#677381">TOP LANGUAGE</text>
+        <text x="566" y="320" font-size="15" fill="#D7DEE8">JAVASCRIPT</text>
+
+        <rect x="812" y="292" width="4" height="4" fill="#9B0808"/>
+        <text x="824" y="297" font-size="10" letter-spacing="1.8" fill="#677381">SOURCE MASS</text>
+        <text x="812" y="320" font-size="15" fill="#D7DEE8">1.15 MB</text>
+      </g>
+    </g>
+  
+
+    <!-- footer -->
+    <g>
+      <text x="32" y="368" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="8" letter-spacing="2.2" fill="#46515E">ULTRON // ROGUE CORE</text>
+      <rect x="1124" y="356" width="66" height="11" fill="url(#barcode)" opacity=".55"/>
+      <text x="1106" y="368" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="8" letter-spacing="1.6" fill="#46515E">UC-02 / TELEMETRY</text>
+    </g>
+  </g>
+
+  <path d="M1 1H1152L1199 48V379H1Z" fill="none" stroke="#29333F"/>
+  <g stroke="#E10600" fill="none" stroke-width="2">
+    <path d="M1 34V1H34"/>
+    <path d="M1199 346V379H1165"/>
+  </g>
+  <path d="M1152 1H1172L1199 28V48" fill="none" stroke="#4A5563" opacity=".8"/>
+  <path d="M1180 29L1199 48" stroke="#E10600" stroke-width="1.4" opacity=".65"/>
+  <g fill="#4A5563" opacity=".7">
+    <rect x="1148" y="60" width="2" height="6"/>
+    <rect x="1153" y="60" width="1" height="6"/>
+    <rect x="1157" y="60" width="3" height="6"/>
+    <rect x="1163" y="60" width="1" height="6"/>
+  </g>
+</svg>
