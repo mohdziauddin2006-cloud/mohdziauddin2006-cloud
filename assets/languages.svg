@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" width="1200" height="430" role="img" aria-labelledby="t d">
   <title id="t">Ultron language stack — neural loadout</title>
-  <desc id="d">Language composition for mohdziauddin2006-cloud, led by JavaScript at 76.0 percent.</desc>
+  <desc id="d">Language composition for mohdziauddin2006-cloud, led by JavaScript at 76.7 percent.</desc>
   <defs>
     <linearGradient id="cardBg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0D131B"/>
@@ -115,7 +115,7 @@
       <rect x="32" y="27" width="7" height="7" fill="#E10600" class="pulse"/>
       <text x="50" y="38" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" letter-spacing="3.2" fill="#D7DEE8">NEURAL LOADOUT</text>
       <text x="32" y="55" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#5E6A79">LANGUAGE STACK / BYTE MASS / SOURCE COMPOSITION</text>
-      <text x="1128" y="33" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.6" fill="#6E7A88">2026.10.23 / 10:43 UTC</text>
+      <text x="1128" y="33" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.6" fill="#6E7A88">2026.10.23 / 11:56 UTC</text>
       <text x="1128" y="51" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.8" fill="#7C8795">LIVE // ROGUE CORE 03 / 06</text>
       <path d="M1 66H1199" stroke="#232C37"/>
       <path d="M806 66H1128" stroke="url(#redRail)" stroke-width="2"/>
@@ -131,14 +131,14 @@
         <g class="reveal" style="animation-delay:0.08s">
           <text x="32" y="112" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#FF3B2F">01</text>
           <text x="66" y="112" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="1.2" fill="#D7DEE8">JAVASCRIPT</text>
-          <text x="280" y="112" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">891.3 KB</text>
+          <text x="280" y="112" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">926.1 KB</text>
           <rect x="300" y="104" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
           <g class="fillbar" style="animation-delay:0.20s">
-            <rect x="300" y="104" width="547.2" height="10" fill="url(#barGradHot)"/>
-            <rect x="300" y="104" width="547.2" height="1.2" fill="#FF9A8E" opacity=".85"/>
+            <rect x="300" y="104" width="552.2" height="10" fill="url(#barGradHot)"/>
+            <rect x="300" y="104" width="552.2" height="1.2" fill="#FF9A8E" opacity=".85"/>
           </g>
-          <path d="M847.2 102V116" stroke="#FF6A5E" stroke-width="1.2"/>
-          <text x="1168" y="112" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">76.0<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M852.2 102V116" stroke="#FF6A5E" stroke-width="1.2"/>
+          <text x="1168" y="112" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">76.7<tspan font-size="10" fill="#6A7684">%</tspan></text>
           <path d="M32 133H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
         </g>
       
@@ -148,11 +148,11 @@
           <text x="280" y="155" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">109.7 KB</text>
           <rect x="300" y="147" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
           <g class="fillbar" style="animation-delay:0.32s">
-            <rect x="300" y="147" width="67.4" height="10" fill="url(#barGrad)"/>
-            <rect x="300" y="147" width="67.4" height="1.2" fill="#FF9A8E" opacity=".4"/>
+            <rect x="300" y="147" width="65.4" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="147" width="65.4" height="1.2" fill="#FF9A8E" opacity=".4"/>
           </g>
-          <path d="M367.4 145V159" stroke="#7A0707" stroke-width="1.2"/>
-          <text x="1168" y="155" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">9.4<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M365.4 145V159" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="155" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">9.1<tspan font-size="10" fill="#6A7684">%</tspan></text>
           <path d="M32 176H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
         </g>
       
@@ -162,11 +162,11 @@
           <text x="280" y="198" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">75.7 KB</text>
           <rect x="300" y="190" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
           <g class="fillbar" style="animation-delay:0.44s">
-            <rect x="300" y="190" width="46.5" height="10" fill="url(#barGrad)"/>
-            <rect x="300" y="190" width="46.5" height="1.2" fill="#FF9A8E" opacity=".4"/>
+            <rect x="300" y="190" width="45.2" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="190" width="45.2" height="1.2" fill="#FF9A8E" opacity=".4"/>
           </g>
-          <path d="M346.5 188V202" stroke="#7A0707" stroke-width="1.2"/>
-          <text x="1168" y="198" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">6.5<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M345.2 188V202" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="198" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">6.3<tspan font-size="10" fill="#6A7684">%</tspan></text>
           <path d="M32 219H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
         </g>
       
@@ -176,11 +176,11 @@
           <text x="280" y="241" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">54.0 KB</text>
           <rect x="300" y="233" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
           <g class="fillbar" style="animation-delay:0.56s">
-            <rect x="300" y="233" width="33.2" height="10" fill="url(#barGrad)"/>
-            <rect x="300" y="233" width="33.2" height="1.2" fill="#FF9A8E" opacity=".4"/>
+            <rect x="300" y="233" width="32.2" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="233" width="32.2" height="1.2" fill="#FF9A8E" opacity=".4"/>
           </g>
-          <path d="M333.2 231V245" stroke="#7A0707" stroke-width="1.2"/>
-          <text x="1168" y="241" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">4.6<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M332.2 231V245" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="241" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">4.5<tspan font-size="10" fill="#6A7684">%</tspan></text>
           <path d="M32 262H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
         </g>
       
@@ -190,11 +190,11 @@
           <text x="280" y="284" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1" fill="#576271">41.6 KB</text>
           <rect x="300" y="276" width="720" height="10" fill="#10161D" stroke="#1B232D"/>
           <g class="fillbar" style="animation-delay:0.68s">
-            <rect x="300" y="276" width="25.5" height="10" fill="url(#barGrad)"/>
-            <rect x="300" y="276" width="25.5" height="1.2" fill="#FF9A8E" opacity=".4"/>
+            <rect x="300" y="276" width="24.8" height="10" fill="url(#barGrad)"/>
+            <rect x="300" y="276" width="24.8" height="1.2" fill="#FF9A8E" opacity=".4"/>
           </g>
-          <path d="M325.5 274V288" stroke="#7A0707" stroke-width="1.2"/>
-          <text x="1168" y="284" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">3.5<tspan font-size="10" fill="#6A7684">%</tspan></text>
+          <path d="M324.8 274V288" stroke="#7A0707" stroke-width="1.2"/>
+          <text x="1168" y="284" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="20" font-weight="700" fill="#D7DEE8">3.4<tspan font-size="10" fill="#6A7684">%</tspan></text>
           <path d="M32 305H1168" stroke="#1A222C" stroke-width=".7" opacity=".75"/>
         </g>
       
@@ -214,7 +214,7 @@
       
     <g class="reveal" style="animation-delay:.8s">
       <path d="M1 370H1199" stroke="#232C37"/>
-      <text x="32" y="398" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#677381">SOURCE MASS <tspan fill="#D7DEE8">1.15 MB</tspan></text>
+      <text x="32" y="398" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#677381">SOURCE MASS <tspan fill="#D7DEE8">1.18 MB</tspan></text>
       <text x="432" y="398" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#677381">DETECTED <tspan fill="#D7DEE8">07</tspan> LANGUAGES</text>
       <text x="1168" y="398" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2" fill="#5E6A79">LOADOUT INDEX 03 / 06</text>
     </g>
