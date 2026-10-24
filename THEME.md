@@ -1,5 +1,7 @@
 # ULTRON // ROGUE CORE
 
+<p><sub><samp><kbd><b>THEME</b></kbd> &nbsp;·&nbsp; <b>CORE:</b> ONLINE &nbsp;·&nbsp; <b>MODE:</b> SELF-HOSTED &nbsp;·&nbsp; <b>THREAT LEVEL:</b> <span style="color: #FF0000;">OMEGA-CLASS IDENTITY</span></samp></sub></p>
+
 **A self-hosted README identity system for a machine that was meant to be beautiful.**
 
 This is an original fan-made visual system, not a copy of an existing README template. All
@@ -9,9 +11,9 @@ image services, no third-party stats cards. The only outside request is the GitH
 
 ---
 
-## 01 / CONCEPT
+## 01 // CONCEPT
 
-**A beautiful machine with no restraint.**
+<span style="color: #FF0000;">**A beautiful machine with no restraint.**</span>
 
 The layout takes the structural language of a modern identity card system — a cinematic
 hero, modular data panels, a language stack, a contribution matrix — then corrupts it with
@@ -34,7 +36,7 @@ Every panel after the hero is deliberately quieter: telemetry, not theatre.
 
 ---
 
-## 02 / PALETTE
+## 02 // PALETTE
 
 | Token | Hex | Use |
 | --- | --- | --- |
@@ -51,12 +53,11 @@ Every panel after the hero is deliberately quieter: telemetry, not theatre.
 | Wound | `#7A0303` | Deep accent, bars, secondary marks |
 | Cavity | `#05070A` | Eye sockets, negative space |
 
-**Ratio:** 70% near-black steel, 20% silver text, 10% blood signal. Red is a warning,
-never a background wash.
+<samp><b>RATIO: 70 STEEL / 20 SILVER / <span style="color: #FF0000;">10 BLOOD</span></b> · <b>RED IS A WARNING — NEVER A WASH</b></samp>
 
 ---
 
-## 03 / TYPE
+## 03 // TYPE
 
 System fonts only. GitHub intentionally strips external font loading from SVG served
 through its image proxy, so the system is designed to survive that constraint.
@@ -74,7 +75,7 @@ layout because every header uses a fixed `viewBox` and system font stack.
 
 ---
 
-## 04 / MOTION
+## 04 // MOTION
 
 Motion is slow and mechanical. Nothing bounces.
 
@@ -100,7 +101,7 @@ depends on animation to appear.
 
 ---
 
-## 05 / SURFACES
+## 05 // SURFACES
 
 | File | Role |
 | --- | --- |
@@ -123,7 +124,7 @@ the workflow makes no commit.
 
 ---
 
-## 06 / REGENERATION
+## 06 // REGENERATION
 
 **Local**
 
@@ -153,7 +154,7 @@ the cached snapshot instead of failing the workflow.
 
 ---
 
-## 07 / ASSET RULES
+## 07 // ASSET RULES
 
 - Keep the outer frame intact: 1 px steel stroke, notched top-right corner, red corner brackets.
 - New data widgets must use the same header rail, footer rail, mono labels, and pulse red square.
@@ -162,4 +163,4 @@ the cached snapshot instead of failing the workflow.
 - Red is always a signal: live state, peak value, active bar, danger decoration.
 - Microcopy is lowercase-free by design.
 
-**THE MACHINE DREAMS IN RED. // 0x06**
+<kbd><b><span style="color: #FF0000;">THE MACHINE DREAMS IN RED.</span></b> // 0x06</kbd>
