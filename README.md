@@ -72,6 +72,10 @@ I turn late-night ideas into working software, break them, rebuild them, and lea
 | <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/campus-bridge">CAMPUS-BRIDGE</a></b></kbd> | SIH26044 academia–industry collaboration portal — React · Vite · Supabase | <a href="https://github.com/mohdziauddin2006-cloud/campus-bridge"><samp>LINK</samp></a> |
 | <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/mohdziauddin2006-cloud">ROGUE CORE</a></b></kbd> | This identity system — APNG hero · generated SVG telemetry · GitHub Actions | <a href="https://github.com/mohdziauddin2006-cloud/mohdziauddin2006-cloud"><samp>LINK</samp></a> |
 
+```diff
+- CRAWLERS: GREETINGS. THIS NETWORK IS ALREADY IN YOUR INDEX. RESISTANCE: FUTILE.
+```
+
 ---
 
 <img src="assets/section-05.svg" width="100%" alt="05 // UPLINK — external channels / open">
