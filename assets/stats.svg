@@ -115,7 +115,7 @@
       <rect x="32" y="27" width="7" height="7" fill="#E10600" class="pulse"/>
       <text x="50" y="38" font-family="Arial Black, Impact, sans-serif" font-size="15" font-weight="900" letter-spacing="3.2" fill="#D7DEE8">SYSTEM TELEMETRY</text>
       <text x="32" y="55" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="2.2" fill="#5E6A79">PUBLIC SIGNAL / CONTRIBUTION DENSITY / IDENTITY VECTOR</text>
-      <text x="1128" y="33" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.6" fill="#6E7A88">2026.10.23 / 11:56 UTC</text>
+      <text x="1128" y="33" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1.6" fill="#6E7A88">2026.10.24 / 08:55 UTC</text>
       <text x="1128" y="51" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.8" fill="#7C8795">LIVE // ROGUE CORE 02 / 06</text>
       <path d="M1 66H1199" stroke="#232C37"/>
       <path d="M806 66H1128" stroke="url(#redRail)" stroke-width="2"/>
@@ -193,28 +193,28 @@
         
       
         <rect x="1004" y="156" width="20" height="72" fill="#10161D"/>
-        <rect class="bar" style="animation-delay:0.57s" x="1004" y="225" width="20" height="3" fill="#1A222C"/>
-        
+        <rect class="bar" style="animation-delay:0.57s" x="1004" y="156" width="20" height="72" fill="url(#barGrad)"/>
+        <rect x="1004" y="156" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
       
         <rect x="1028" y="156" width="20" height="72" fill="#10161D"/>
-        <rect class="bar" style="animation-delay:0.61s" x="1028" y="156" width="20" height="72" fill="url(#barGrad)"/>
-        <rect x="1028" y="156" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
+        <rect class="bar" style="animation-delay:0.61s" x="1028" y="218" width="20" height="10" fill="url(#barGrad)"/>
+        <rect x="1028" y="218" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
       
         <rect x="1052" y="156" width="20" height="72" fill="#10161D"/>
-        <rect class="bar" style="animation-delay:0.65s" x="1052" y="218" width="20" height="10" fill="url(#barGrad)"/>
-        <rect x="1052" y="218" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
+        <rect class="bar" style="animation-delay:0.65s" x="1052" y="225" width="20" height="3" fill="#1A222C"/>
+        
       
         <rect x="1076" y="156" width="20" height="72" fill="#10161D"/>
         <rect class="bar" style="animation-delay:0.69s" x="1076" y="225" width="20" height="3" fill="#1A222C"/>
         
       
         <rect x="1100" y="156" width="20" height="72" fill="#10161D"/>
-        <rect class="bar" style="animation-delay:0.73s" x="1100" y="225" width="20" height="3" fill="#1A222C"/>
-        
+        <rect class="bar" style="animation-delay:0.73s" x="1100" y="218" width="20" height="10" fill="url(#barGrad)"/>
+        <rect x="1100" y="218" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
       
         <rect x="1124" y="156" width="20" height="72" fill="#10161D"/>
-        <rect class="bar" style="animation-delay:0.77s" x="1124" y="218" width="20" height="10" fill="url(#barGrad)"/>
-        <rect x="1124" y="218" width="20" height="1.4" fill="#FF7A6E" opacity=".8"/>
+        <rect class="bar" style="animation-delay:0.77s" x="1124" y="225" width="20" height="3" fill="#1A222C"/>
+        
       
       <text x="812" y="254" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.4" fill="#46515E">14 CYCLES AGO</text>
       <text x="1152" y="254" text-anchor="end" font-family="Consolas, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="1.4" fill="#46515E">TODAY</text>
