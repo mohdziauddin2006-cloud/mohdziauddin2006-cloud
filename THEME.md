@@ -3,8 +3,9 @@
 **A self-hosted README identity system for a machine that was meant to be beautiful.**
 
 This is an original fan-made visual system, not a copy of an existing README template. All
-artwork is hand-built SVG: no film stills, no logos, no external image services, no
-third-party stats cards. The only outside request is the GitHub API itself.
+artwork is self-hosted: the live hero is a generated Ultron painting wrapped in hand-built
+motion overlays, and every data panel is generated SVG. No film stills, no logos, no runtime
+image services, no third-party stats cards. The only outside request is the GitHub API itself.
 
 ---
 
@@ -67,8 +68,9 @@ through its image proxy, so the system is designed to survive that constraint.
 | Data | `Consolas`, monospace | Large tabular figures; never decorative |
 | Prose | GitHub system sans | Left-aligned, short line lengths |
 
-The hero uses `textLength` on the blood word so the composition holds even when Arial
-Black is unavailable and the fallback face is narrower.
+The hero wordmark lives inside the base painting, while the section headers use a heavy
+monospace treatment with wide tracking and a crimson glitch duplicate. SVG labels keep their
+layout because every header uses a fixed `viewBox` and system font stack.
 
 ---
 
@@ -78,18 +80,23 @@ Motion is slow and mechanical. Nothing bounces.
 
 | Surface | Motion | Duration |
 | --- | --- | --- |
-| Hero optics | Crimson pulse + flicker | 4.2 s / 8.5 s |
-| Hero reticle | Counter-rotating HUD rings | 72 s / 110 s |
-| Hero face | Clipped scanline sweep | 9 s |
-| Quote | Blood runs grow, beads detach | 6.9–10.4 s |
-| Hero chrome | Rare 3px glitch on the wordmark | 11 s |
+| Hero optics | Crimson core pulse on the exposed lens | 2 s loop, 3 pulses |
+| Hero reticle | Rotating HUD arcs and ticks | 2 s loop |
+| Hero scan | Red scan band sweeping top to bottom | 2 s loop |
+| Hero blood | Drips grow, bead detaches, reset | 2 s loop, staggered |
+| Hero breach | Two short RGB/band glitch bursts | ~0.3 s each |
+| Hero embers | Red particles drift upward | 2 s loop |
+| Section headers | Flicker, glitch duplicate, scan sweep | 3.8–7.1 s |
 | Stats | Value reveal + 14-day equalizer | 0.9 s / 1.25 s |
 | Stack | Percentage bars grow from the left | 1.5 s, staggered |
 | Matrix | Cells cascade across 53 weeks | 0.5 s per week, staggered |
 | Signal sweep | Thin grid scan across the matrix | 12 s |
 
-Every SVG includes a `prefers-reduced-motion: reduce` block that disables all motion.
-Static exports remain fully legible because no element depends on animation to appear.
+The hero is an APNG: 20 frames at 10 fps, looping every 2 seconds. It keeps the chapter-03
+motion vocabulary while preserving the exact README `<img>` layout. Section-header SVGs
+include a `prefers-reduced-motion: reduce` block; the APNG freezes on its first frame when the
+browser or OS disables animation. Static exports remain fully legible because no element
+depends on animation to appear.
 
 ---
 
@@ -97,12 +104,17 @@ Static exports remain fully legible because no element depends on animation to a
 
 | File | Role |
 | --- | --- |
-| `assets/hero.svg` | Cinematic hero: quote, dripping type, fractured android, HUD |
+| `assets/watermarked_img_8974856398217869544.png` | Live animated hero: realistic Ultron painting + APNG motion system |
+| `assets/hero-gemini-base.png` | Static 1280×620 hero plate used to build the APNG |
+| `assets/section-01.svg` … `section-05.svg` | Crimson glitch section headers |
+| `assets/hero.svg` | Legacy hand-built vector hero, retained as an alternate composition |
 | `assets/stats.svg` | Live telemetry: contributions, commits, repos, stars, followers, streaks, 14-day vector |
 | `assets/languages.svg` | Public language composition by byte mass |
 | `assets/heatmap.svg` | 53-week contribution matrix with signal-density legend |
 | `assets/data.json` | Raw cached telemetry snapshot |
-| `scripts/generate-assets.mjs` | Deterministic renderer; no npm dependencies |
+| `scripts/generate-assets.mjs` | Deterministic data-card renderer; no npm dependencies |
+| `scripts/build-hero-apng.py` | Builds the hero APNG from the base painting |
+| `scripts/build-section-headers.py` | Regenerates the section-header SVGs |
 | `.github/workflows/ultron-sync.yml` | Daily refresh + manual dispatch |
 
 All data cards are regenerated from the public GitHub GraphQL API. The renderer writes a
@@ -124,6 +136,8 @@ GH_TOKEN=$(gh auth token) node scripts/generate-assets.mjs
 # Windows PowerShell
 $env:GH_TOKEN = (gh auth token)
 node scripts/generate-assets.mjs
+python scripts/build-hero-apng.py
+python scripts/build-section-headers.py
 ```
 
 **Automated**
