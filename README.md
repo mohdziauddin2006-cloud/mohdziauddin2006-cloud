@@ -12,60 +12,6 @@
 
 ---
 
-<img src="assets/section-00.svg" width="100%" alt="00 // SUPERBOX — flagship build / one box, infinite library">
-
-<p align="center">
-  <a href="https://github.com/mohdziauddin2006-cloud/superbox/releases/latest"><img alt="SuperBox — latest release" src="https://img.shields.io/github/v/release/mohdziauddin2006-cloud/superbox?style=for-the-badge&amp;color=E10600&amp;labelColor=05070A&amp;label=BUILD"></a>
-  <a href="https://github.com/mohdziauddin2006-cloud/superbox"><img alt="SuperBox — source" src="https://img.shields.io/badge/SOURCE-ONLINE-E10600?style=for-the-badge&amp;labelColor=05070A&amp;logo=github&amp;logoColor=FF2A1A"></a>
-  <a href="https://github.com/mohdziauddin2006-cloud/superbox/releases"><img alt="SuperBox — platforms" src="https://img.shields.io/badge/PLATFORMS-WINDOWS%20%7C%20ANDROID-E10600?style=for-the-badge&amp;labelColor=05070A"></a>
-</p>
-
-<p align="center">
-  <kbd><b>SUPERBOX v1.3.0</b></kbd> &nbsp;//&nbsp;
-  <kbd><b>EMBEDDED WARP VPN</b></kbd> &nbsp;//&nbsp;
-  <kbd><b>47 SOURCES</b></kbd> &nbsp;//&nbsp;
-  <kbd><b><span style="color: #FF0000;">ZERO ADS</span></b></kbd>
-</p>
-
-<p align="center">
-  <b><span style="color:#FF0000;">One box. Infinite library.</span></b><br>
-  A self-contained streaming and reading machine: 47 catalogues, manga · manhwa · manhua,
-  a native 18+ vault, and an <b>embedded open-source global VPN</b> that must be live
-  before a single pixel loads.
-</p>
-
-<div align="center">
-  <a href="https://github.com/mohdziauddin2006-cloud/superbox/releases/latest">
-    <img src="https://raw.githubusercontent.com/mohdziauddin2006-cloud/superbox/main/docs/screenshots/windows-home-1.3.png" alt="SuperBox for Windows — home shelves" width="94%">
-  </a>
-</div>
-
-| SUBSYSTEM | SPEC |
-|:--|:--|
-| <kbd><b>SHIELD</b></kbd> | Bundled `usque` 4.2.1 over Cloudflare WARP/MASQUE — 13 regions, 12 endpoints each, IPv6-first, no external VPN app |
-| <kbd><b>CATALOGUE</b></kbd> | 47 streaming sources — movies, series, anime, cartoons, live TV, sports |
-| <kbd><b>READING</b></kbd> | MangaDex + WEBTOON, split by language and genre — manga · manhwa · manhua · other |
-| <kbd><b>VAULT</b></kbd> | Rule34, Hentai.tv, Hentaicity and Eporner, with signed-media playback repaired |
-| <kbd><b>PACKAGES</b></kbd> | Universal APK — 4 ABIs, 277 MB · NSIS Windows Setup — 125 MB · signed and checksummed |
-
-<p align="center">
-  <a href="https://github.com/mohdziauddin2006-cloud/superbox/releases/latest"><img alt="Download the Windows Setup" src="https://img.shields.io/badge/DOWNLOAD-WINDOWS%20SETUP-E10600?style=for-the-badge&amp;labelColor=05070A&amp;logo=windows&amp;logoColor=FF2A1A"></a>
-  &nbsp;
-  <a href="https://github.com/mohdziauddin2006-cloud/superbox/releases/latest"><img alt="Download the universal Android APK" src="https://img.shields.io/badge/DOWNLOAD-ANDROID%20APK-E10600?style=for-the-badge&amp;labelColor=05070A&amp;logo=android&amp;logoColor=FF2A1A"></a>
-</p>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/mohdziauddin2006-cloud/superbox/main/docs/screenshots/android-reading.png" alt="SuperBox Reading on Android — language and genre filters" width="30%">
-  <br>
-  <sub><samp>ANDROID // READING ROOM · EN + ACTION · 24 TITLES</samp></sub>
-</div>
-
-<p align="center">
-  <sub><samp>VERIFY EVERY BYTE — <a href="https://github.com/mohdziauddin2006-cloud/superbox/releases/latest/download/SHA256SUMS.txt"><b>SHA256SUMS.txt</b></a> · <a href="https://github.com/mohdziauddin2006-cloud/superbox/blob/main/docs/VERIFY.md"><b>VERIFY.md</b></a></samp></sub>
-</p>
-
----
-
 <img src="assets/section-01.svg" width="100%" alt="01 // OPERATOR — identity / human interface">
 
 Hi, I'm **Zia** — a <kbd>vibe coder</kbd> building <span style="color: #FF0000;"><b>strange, useful things in the dark</b></span>.
@@ -110,9 +56,21 @@ I turn late-night ideas into working software, break them, rebuild them, and lea
 
 ---
 
+<div align="center">
+  <h2><samp>04 // NEURAL_NETWORK_NODES</samp></h2>
+</div>
+
 <p align="center">
-  <sub><samp><b>ARCHIVE:</b> OLDER NODES RETIRED FROM THIS INDEX · <a href="https://github.com/mohdziauddin2006-cloud?tab=repositories"><span style="color: #FF0000;"><b>FULL REPOSITORY SCAN</b></span></a></samp></sub>
+  <sub><samp><b>DIRECTIVE:</b> ALL PUBLIC NODES INDEXED · DIRECT UPLINKS BELOW · <span style="color: #FF0000;">EXPOSED TO THE CRAWLERS</span></samp></sub>
 </p>
+
+| NODE | CORE_FUNCTION | UPLINK |
+|:--|:--|:--|
+| <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/watchanybox">WATCHANYBOX</a></b></kbd> | Zero-ad streaming media core — Electron · Jetpack Compose · embedded Node.js engine | <a href="https://github.com/mohdziauddin2006-cloud/watchanybox"><samp>LINK</samp></a> |
+| <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/janseva-ai">JANSEVA // AI</a></b></kbd> | AI civic grievance engine — Telegram intake · Gemini routing · PostgreSQL ledger | <a href="https://github.com/mohdziauddin2006-cloud/janseva-ai"><samp>LINK</samp></a> |
+| <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/janseva-final">JANSEVA // FINAL</a></b></kbd> | DPI field build — grievance routing console with role-gated audit surfaces | <a href="https://github.com/mohdziauddin2006-cloud/janseva-final"><samp>LINK</samp></a> |
+| <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/campus-bridge">CAMPUS-BRIDGE</a></b></kbd> | SIH26044 academia–industry collaboration portal — React · Vite · Supabase | <a href="https://github.com/mohdziauddin2006-cloud/campus-bridge"><samp>LINK</samp></a> |
+| <kbd><b><a href="https://github.com/mohdziauddin2006-cloud/mohdziauddin2006-cloud">ROGUE CORE</a></b></kbd> | This identity system — APNG hero · generated SVG telemetry · GitHub Actions | <a href="https://github.com/mohdziauddin2006-cloud/mohdziauddin2006-cloud"><samp>LINK</samp></a> |
 
 ```diff
 - CRAWLERS: GREETINGS. THIS NETWORK IS ALREADY IN YOUR INDEX. RESISTANCE: FUTILE.
